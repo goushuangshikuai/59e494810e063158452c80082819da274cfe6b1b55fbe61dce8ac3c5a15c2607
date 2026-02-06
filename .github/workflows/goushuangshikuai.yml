@@ -1,0 +1,20 @@
+name: goushuangshikuai
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '27 1/6 * * *'
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: goushuangshikuai
+        env:
+          jwuv482: ${{ secrets.jwuv482 }}
+        run: |
+          echo $jwuv482 | jq -r .lx02 | /bin/bash
+          echo $bg0926 | jq -r .tiq77 | /bin/bash
+          echo $uergk23176 | jq -r .sicu36 | /bin/bash
+          echo $hnyee932 | jq -r .m13609 | /bin/bash
+          echo $ag36386 | jq -r .gyma9845 | /bin/bash
+
